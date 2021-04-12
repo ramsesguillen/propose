@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you wanna..?.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <Style>
+        .box-button-not {
+            width: 130px;
+            height: 130px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 3;
+        }
+        .box-button-yes {
+            width: 130px;
+            height: 130px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 130px;
+        }
+        .container-btn {
+            max-width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+        }
+        .btn-success {
+            width: 120px;
+        }
+        .btn-danger {
+            width: 120px;
+        }
+    </Style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>¿Te gustaria ser mi novia?</h2>
+        <hr>
+        <div class="container-btn">
+            <div class="box-button-yes">
+                <button id="btn-yes" class="btn btn-success">Si</button>
+            </div>
+            <div class="box-button-not">
+                <button id="btn-not" class="btn btn-danger">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
